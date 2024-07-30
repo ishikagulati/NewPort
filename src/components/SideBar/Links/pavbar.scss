@@ -1,0 +1,30 @@
+// Navbar.scss
+
+.pavbar {
+    background-color: #333;
+    padding: 1rem;
+  
+    &__list {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+  
+    &__item {
+      margin: 0;
+  
+      &__link {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+  }
+  

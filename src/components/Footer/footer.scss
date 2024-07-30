@@ -1,0 +1,57 @@
+// footer.scss
+
+.footer {
+    width: 100%;
+    //background-color: rgb(143, 60, 143);
+  
+    .footer-content {
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      p {
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: white;
+  
+        a {
+          color: #ff6347; // secondary color
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #1e90ff; // primary color
+          }
+        }
+  
+        &.secondary {
+          font-weight: normal;
+          color: gray;
+  
+          a {
+            color: inherit; // inherit color from parent
+          }
+        }
+      }
+  
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 10px 0;
+  
+        a {
+          color: white;
+          font-size: 1.5rem;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #1e90ff; // primary color
+          }
+        }
+      }
+    }
+  }
+  
+  
