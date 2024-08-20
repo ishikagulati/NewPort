@@ -3,17 +3,26 @@
     text-align: center;
   
     h2 {
-      font-size: 6rem; // Double the original size for a big and bold look
-      font-weight: bold;
-      color: #4a90e2; // Adjust this color as needed
-      text-decoration: underline;
-      margin-bottom: 20px; // Adjust this margin for the spacing between <h2> and <p>
+      font-size: 5em; // Big title
+      text-align: center; // Centered title
+      margin-bottom: 10px;
+      position: relative;
+      color: orange; // Color to match the progress bar
+
+      &::after {
+        content: "";
+        display: block;
+        width: 25%;
+        height: 4px;
+        background-color: #007bff;
+        margin: 10px auto 0;
+      }
     }
   
     p {
       margin-top: 1rem; // Adjust as needed for spacing between paragraphs
       color: #9CA3AF; // Adjusted to match text-gray-400
-      font-size: 1.125rem; // Adjusted to match text-lg
+      font-size: 3rem; // Adjusted to match text-lg
       text-align: justify;
       overflow: hidden;
       margin-left: 2rem; // Adjust as needed for appropriate left margin

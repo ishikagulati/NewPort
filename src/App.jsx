@@ -21,7 +21,7 @@ function App() {
         </section>
         
   
-      <section className="post" ><Parallax type="services"/></section>
+      <section className="post" id="scroll"><Parallax type="services"/></section>
       <section className="wow" id="about"><About/> </section>
       <section className="ish" id="skills"><Skills/></section>
       

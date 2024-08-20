@@ -9,12 +9,21 @@
 }
 
 .i4 {
-  color: #4a90e2; // Blue color for the heading
-  font-size: 6rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-decoration: underline;
+  font-size: 5em; // Big title
+      text-align: center; // Centered title
+      margin-bottom: 10px;
+      position: relative;
+      color: orange; 
+      
+
+      &::after {
+        content: "";
+        display: block;
+        width: 25%;
+        height: 4px;
+        background-color: #007bff;
+        margin: 10px auto 0;
+      }
 }
 
 .i5 {

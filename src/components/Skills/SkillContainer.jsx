@@ -1,7 +1,7 @@
 
 import  { useEffect, useRef } from 'react';
 import SkillGroup from './SkillGroup';
-import { computeressential, language, frontend, backend, developertools } from '../../info';
+import { learning, language, frontend, backend, tools } from '../../info';
 import { motion } from 'framer-motion';
 import "./SkillContainer.scss";
 
@@ -40,9 +40,9 @@ const SkillContainer = () => {
       <motion.div className="i6">
         <SkillGroup data={frontend} title="Frontend" />
         <SkillGroup data={backend} title="Backend" />
-        <SkillGroup data={ developertools} title="Tools" />
+        <SkillGroup data={ tools} title="Tools" />
         <SkillGroup data={language} title="Languages" />
-        <SkillGroup data={computeressential} title="ComputerEssential"/>
+        <SkillGroup data={learning} title="Learning"/>
        
       </motion.div>
     </section>

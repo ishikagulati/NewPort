@@ -46,7 +46,7 @@
                 <input type="text" required placeholder="Name" name="name"/>
                 <input type="email" required placeholder="Email" name="email"/>
                 <textarea rows={9} placeholder="Message" name="message"/>
-                <button>Submit</button>
+                <button >Submit</button>
                 {error && "Error"}
                 {success && "Success"}
             </form>

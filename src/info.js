@@ -2,10 +2,16 @@
 const name = `Ishika Gulati`;
 
 
- const description = [`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae natus quia reiciendis omnis enim perspiciatis 
-  aliquam dicta error aut accusamus quisquam corrupti excepturi culpa quaerat, velit voluptate laborum, nesciunt ea nostrum dolor vel.
-      itaque quasi culpa sapiente vitae atque illo blanditiis. Dignissimos odio eius aut impedit dicta, neque recusandae ad eum velit ea
-       voluptatum odit delectus est nulla alias quas id nam sit eos quae rerum. Iure, animi. Porro, reprehenderit in nam architecto blanditiis. A magni, ipsum, culpa sint omnis sunt excepturi aliquid animi, accusamus commodi delectus. Est minus molestias culpa voluptatum, omnis quis facilis architecto debitis commodi ipsam. Autem sunt incidunt suscipit accusantium quidem earum at, vero quam nesciunt nam consequuntur eveniet. Suscipit itaque dolor, corrupti eaque sequi quam voluptate dignissimos modi a soluta magni repellendus nisi autem reprehenderit obcaecati quod sint odio eos quis iste ex non eum voluptatem molestiae. Nemo sapiente ratione dolorum cum, numquam dignissimos, perspiciatis magni vero doloribus quia iusto tenetur necessitatibus accusamus, quisquam voluptatum eos! Dolorem unde esse cum exercitationem nam libero architecto tenetur sint sequi cupiditate aliquid autem est, nulla ratione neque eos saepe, repellat laborum voluptas! Animi officia, quisquam laudantium quo doloremque in veritatis et ad possimus, cupiditate rerum eius qui accusamus consectetur atque perspiciatis omnis neque reprehenderit pariatur, voluptatibus placeat totam eveniet. Omnis praesentium harum voluptas id! Ea ratione animi aliquam dolorem a maiores facilis provident velit doloremque explicabo, sapiente ab omnis, enim voluptas quas molestias at eaque iusto consequatur. Fugit praesentium ullam atque consequatur laboriosam natus nesciunt quas ipsum accusamus consectetur officiis, eaque quod rerum quae. Repellendus accusantium facilis reiciendis beatae rem quo quos, delectus laborum officiis fugit eos corrupti, pariatur quam, iure dolore molestiae. Quia ipsam, eius nostrum a qui aut! Quibusdam nesciunt dicta iusto aut explicabo. Exercitationem cumque quisquam ipsam corporis numquam ex accusantium recusandae officiis inventore expedita, natus consequuntur eos. Corporis, modi sit.`]
+ const description = [`Hello World, I'm Ishika Gulati, a final-year BTech student in Information Technology at GGSIPU. With a deep passion for coding, I have honed my skills in Java and Data Structures and Algorithms, enabling me to solve complex problems efficiently. My academic journey has been enriched by my dedication to understanding the intricacies of software development.`,
+
+
+`In addition to my core proficiency in Java, I have also gained experience in full-stack development using the MERN stack. This has allowed me to create several well-rounded projects, each demonstrating my ability to build robust, user-friendly applications. Whether it's front-end design or back-end logic, I enjoy the challenge of turning ideas into reality.`,
+
+
+`I am eager to leverage my skills and knowledge to contribute to innovative projects and collaborate with like-minded professionals as I transition into the professional world.`,
+
+
+`So, thank you for gracing my corner of the digital world! Let's embark on a journey together, where innovation meets imagination, and dreams become reality.`];
 
 const language = [{
     name: "Java",
@@ -61,11 +67,11 @@ const language = [{
     name:"Redux",
     src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
   },
-  // {
-  //   name:"EJS",
-  //   src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ejs/ejs-original.svg"
+  {
+    name:"EJS",
+    //src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ejs/ejs-original.svg"
   
-  // }
+  }
   ]
   
   const backend = [{
@@ -80,25 +86,25 @@ const language = [{
     name: "MongoDB",
     src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
   },
-  // {
-  //   name: "MySQL",
-  //   src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
-  // },
-  // {
-  //   name: "Appwrite",
-  //   src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/appwrite/appwrite-original.svg"
-  // },
-  // {
-  //   name:"Restful API",  
-  //   src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/api/api-original.svg"
-  // }
+  {
+    name: "MySQL",
+    src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+  },
+  {
+    name: "Appwrite",
+    src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/appwrite/appwrite-original.svg"
+  },
+  {
+    name:"Restful API",  
+    //src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/api/api-original.svg"
+  }
   ]
   
-   const developertools = [
-    //{
-  //   name: "Git",
-  //   src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-  // },
+   const tools = [
+    {
+    name: "Git",
+    src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+  },
   {
     name: "GitHub",
     src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
@@ -111,48 +117,48 @@ const language = [{
     name: "VSCode",
     src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
   },
-  // {name: "Photoshop",
-  //   src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg"
-  // },
-  // {
-  //   name: "Figma",
-  //   src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-  // },
-  // {
-  //   name:"Canava",
-  //   src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"
-  // },
-  // {
-  //   name:"Postman",
-  //   src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+  {name: "Photoshop",
+    src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg"
+  },
+  {
+    name: "Figma",
+    src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+  },
+  {
+    name:"Canava",
+    src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"
+  },
+  {
+    name:"Postman",
+    src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
   
-  // },
+  },
   
   ]
   
-  const computeressential = [
-  // {
-  //     name:"Next JS",
-  //     src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
-  //   },
-  //{
-  //   name: "GraphQL",
-  //   src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
-  // },
-  // {
-  //   name: "TypeScript",
-  //   src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-  // },
-  // {
-  //   name:"React Native",
-  //   src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-  // },
-  {name:"DSA"},
-  {name:"OOPS"},
-  {name:"DBMS"},
+  const learning = [
+  {
+      name:"Next JS",
+      src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
+    },
+  {
+    name: "GraphQL",
+    src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
+  },
+  {
+    name: "TypeScript",
+    src : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+  },
+  {
+    name:"React Native",
+    src:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+  },
+  // {name:"DSA"},
+  // {name:"OOPS"},
+  // {name:"DBMS"},
 
    ]
   
   
-  export { name,  description , language, frontend, backend, developertools,computeressential,
+  export { name,  description , language, frontend, backend, tools,learning,
     }

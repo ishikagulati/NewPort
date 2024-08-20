@@ -26,13 +26,13 @@ const Hero = () => {
           <h2 >ISHIKA GULATI</h2>
           <h1 >Software Developer</h1>
           <div className="buttons">
-            <button>Resume🗒️</button>
-            <button >Contact Me</button>
+            <button ><a href="https://drive.google.com/file/d/1qDS1Iq1Igq_Yu9o3w72DZNbHQFeEmlDP/view">Resume</a></button>
+            <button ><a href="#contact">Contact</a></button>
           </div>
-          <img src="scroll.png" alt="Scroll"  />
+          <a href="#scroll"> <img src="scroll.png" alt="Scroll"  /></a>
         </div>
         <motion.div className="imageContainer">
-          <img src="/image.jpg" alt="Hero" />
+          <img src="/rbg1.png" alt="Hero"  />
         </motion.div>
       </div>
       <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">

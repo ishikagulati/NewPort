@@ -6,6 +6,7 @@
     background-color: white;
     color: black;
     position:relative;
+    z-index: 1000;
     
     .bg {
       position: fixed;
@@ -15,7 +16,8 @@
       width: 400px;
       background: white;
       display: grid;
-      
+      color:black;
+      z-index: 1000;
       
   
       .links {
@@ -28,7 +30,9 @@
         justify-content: center;
         gap: 20px;
         background-color:white;
-        z-index: -1;
+        color:black;
+        z-index: 1000;
+        
         
         
         
@@ -48,6 +52,7 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
+      z-index:1000;
     }
   }
   

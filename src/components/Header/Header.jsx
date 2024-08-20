@@ -10,7 +10,7 @@ const GitHubButton = () => {
   return (
     <>
     <button className="github-button" onClick={openGitHub}>
-      GitHub👩🏻‍💻
+     Github👩🏻‍💻
     </button>
     <Navbar/>
     <SideBar/>

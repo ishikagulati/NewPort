@@ -1,23 +1,25 @@
 
 .github-button {
-    background-color: #333;
-    color: #fff;
-    border: 3px solid #b57edc; /* Thickened purple border */
-    padding: 14px 28px; /* Increased padding for a bigger button */
-    cursor: pointer;
+  margin-top: 2px;
+    background-color: transparent;
+    color: #9b72cf;
+    border: 2.5px solid #9b72cf;
+    /*Thickenedpurpleborder*/padding: 0.5rem 0.9rem;
+    /*Increasedpaddingforabiggerbutton*/cursor: pointer;
     position: absolute;
     top: 20px;
-    right: 100px; /* Further adjusted right positioning */
-    margin: 0;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for slight animation */
-  
-    font-weight: bold; /* Font weight increased */
-    font-size: 18px; /* Font size adjusted */
-  
-    &:hover {
-      background-color: #6e5494; /* Change to your desired hover color */
-      transform: scale(1.1); /* Slight scale-up on hover */
+    right: 100px;
+    border-radius:2px;
+    margin: 2px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    &:hover                 
+    
+{
+      background-color: darken($color: #9b72cf, $amount: 10%);
+      color:white; /* Change to your desired hover color */
+      //transform: scale(1.1); /* Slight scale-up on hover */
     }
   }
-  
   

@@ -1,11 +1,10 @@
 .contact{
     height: 100%;
     max-width:1366px;
-    margin: auto;
     display: flex;
     align-items:center;
     gap:50px;
-
+     margin-left: 100px;
     .textContainer{
         flex:1;
         display:flex;
@@ -21,6 +20,7 @@
     }
     .formContainer{
         flex:1;
+        margin-right: 100px;
         form{
             display:flex;
             flex-direction: column;
@@ -37,12 +37,18 @@
            
 }
 button{
-    padding:20px;
+    padding:10px;
     border:none;
     background-color:orange;
     cursor:pointer;
     font-weight: 100;
+    color:white;
+    font-weight: bolder;
+    font-size: 2rem;
+    border-radius:5px    ;
+    
 }
+
         }
     }
 }   

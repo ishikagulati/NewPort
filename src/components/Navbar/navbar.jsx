@@ -23,9 +23,7 @@ import './navbar.scss';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-container">
-        <img src="/logoishika.jpg" alt="Logo" className="navbar-logo" />
-      </div>
+      
     </nav>
   );
 };
