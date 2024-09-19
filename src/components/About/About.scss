@@ -1,38 +1,37 @@
 #about {
-    margin-top: 100px;
-    text-align: center;
-  
-    h2 {
-      font-size: 5em; // Big title
-      text-align: center; // Centered title
-      margin-bottom: 10px;
-      position: relative;
-      color: orange; // Color to match the progress bar
+  margin-top: 100px;
+  text-align: center;
 
-      &::after {
-        content: "";
-        display: block;
-        width: 25%;
-        height: 4px;
-        background-color: #007bff;
-        margin: 10px auto 0;
-      }
-    }
-  
-    p {
-      margin-top: 1rem; // Adjust as needed for spacing between paragraphs
-      color: #9CA3AF; // Adjusted to match text-gray-400
-      font-size: 3rem; // Adjusted to match text-lg
-      text-align: justify;
-      overflow: hidden;
-      margin-left: 2rem; // Adjust as needed for appropriate left margin
-      margin-right: 2rem; // Adjust as needed for appropriate right margin
-  
-      @media (min-width: 640px) {
-        font-size: 1.25rem; // Adjusted to match sm:text-xl
-        margin-left: 3rem; // Adjust as needed for larger screens
-        margin-right: 3rem; // Adjust as needed for larger screens
-      }
+  h2 {
+    font-size: 5em; // Big title
+    text-align: center; // Centered title
+    margin-bottom: 10px;
+    position: relative;
+    color: orange; // Color to match the progress bar
+
+    &::after {
+      content: "";
+      display: block;
+      width: 25%;
+      height: 4px;
+      background-color: #007bff;
+      margin: 10px auto 0;
     }
   }
-  
+
+  p {
+    margin-top: 1rem; // Adjust as needed for spacing between paragraphs
+    color: #9CA3AF; // Adjusted to match text-gray-400
+    font-size: 3rem; // Adjusted to match text-lg
+    text-align: justify;
+    overflow: hidden;
+    margin-left: 2rem; // Adjust as needed for appropriate left margin
+    margin-right: 2rem; // Adjust as needed for appropriate right margin
+
+    @media (min-width: 640px) {
+      font-size: 1.25rem; // Adjusted to match sm:text-xl
+      margin-left: 3rem; // Adjust as needed for larger screens
+      margin-right: 3rem; // Adjust as needed for larger screens
+    }
+  }
+}
