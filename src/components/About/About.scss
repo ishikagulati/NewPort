@@ -3,16 +3,16 @@
   text-align: center;
 
   h2 {
-    font-size: 5em; // Big title
-    text-align: center; // Centered title
+    font-size: 3rem; // Default for smaller screens
+    text-align: center;
     margin-bottom: 10px;
     position: relative;
-    color: orange; // Color to match the progress bar
+    color: orange;
 
     &::after {
       content: "";
       display: block;
-      width: 25%;
+      width: 50%;
       height: 4px;
       background-color: #007bff;
       margin: 10px auto 0;
@@ -20,18 +20,49 @@
   }
 
   p {
-    margin-top: 1rem; // Adjust as needed for spacing between paragraphs
-    color: #9CA3AF; // Adjusted to match text-gray-400
-    font-size: 3rem; // Adjusted to match text-lg
+    margin-top: 1rem;
+    color: #9CA3AF;
+    font-size: 1rem; // Default for smaller screens
     text-align: justify;
     overflow: hidden;
-    margin-left: 2rem; // Adjust as needed for appropriate left margin
-    margin-right: 2rem; // Adjust as needed for appropriate right margin
+    margin-left: 1rem;
+    margin-right: 1rem;
 
     @media (min-width: 640px) {
-      font-size: 1.25rem; // Adjusted to match sm:text-xl
-      margin-left: 3rem; // Adjust as needed for larger screens
-      margin-right: 3rem; // Adjust as needed for larger screens
+      font-size: 1.25rem; // Tablet screens (640px and above)
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem; // Medium screens (768px and above)
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 2rem; // Larger screens (1024px and above)
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+  }
+
+  // Adjust title size and progress bar for larger screens
+  @media (min-width: 640px) {
+    h2 {
+      font-size: 4rem; // Bigger title on medium screens
+      &::after {
+        width: 35%; // Wider progress bar
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 5rem; // Bigger title on large screens
+      &::after {
+        width: 25%; // Restore to original size on very large screens
+      }
     }
   }
 }

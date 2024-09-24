@@ -54,24 +54,43 @@
 //     font-weight: bold; /* Bold font weight */
 //     font-family: 'Arial', sans-serif; /* Example: Better font style */
 //   }
-  .navbar {
-    // background-color: #333;
-    // padding: 1rem;
+.navbar {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100px; /* Default height */
+  
+  .navbar-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100px; /* Adjust height as needed */
-    //background-color: olive ;/* Light purple background color */
-  
-    .navbar-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
-      .navbar-logo {
-        width: 50px;
-        height: 50px;
-      }
+    justify-content: center;
+    align-items: center;
+
+    .navbar-logo {
+      width: 50px;
+      height: 50px; /* Default logo size */
     }
   }
-  
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    height: 80px; /* Reduce navbar height for tablets */
+  }
+
+  .navbar-container .navbar-logo {
+    width: 40px;
+    height: 40px; /* Reduce logo size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 60px; /* Further reduce navbar height for mobile devices */
+  }
+
+  .navbar-container .navbar-logo {
+    width: 30px;
+    height: 30px; /* Smaller logo size for mobile screens */
+  }
+}

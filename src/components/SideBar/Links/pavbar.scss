@@ -27,3 +27,26 @@
     }
   }
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pavbar__list {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center the items */
+  }
+
+  .pavbar__item {
+    margin-bottom: 0.5rem; /* Add space between items */
+  }
+}
+
+@media (max-width: 480px) {
+  .pavbar {
+    padding: 0.5rem; /* Reduce padding on smaller screens */
+  }
+
+  .pavbar__link {
+    padding: 0.5rem 0.75rem; /* Adjust link padding for smaller screens */
+    font-size: 0.9rem; /* Reduce font size for smaller screens */
+  }
+}

@@ -10,20 +10,19 @@
 
 .i4 {
   font-size: 5em; // Big title
-      text-align: center; // Centered title
-      margin-bottom: 10px;
-      position: relative;
-      color: orange; 
-      
+  text-align: center; // Centered title
+  margin-bottom: 10px;
+  position: relative;
+  color: orange;
 
-      &::after {
-        content: "";
-        display: block;
-        width: 25%;
-        height: 4px;
-        background-color: #007bff;
-        margin: 10px auto 0;
-      }
+  &::after {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+  }
 }
 
 .i5 {
@@ -42,7 +41,6 @@
 }
 
 .i7 {
-  
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -84,4 +82,59 @@
   width: 40px;
   height: 40px;
   object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .i4 {
+    font-size: 4em; // Adjust title size for medium screens
+  }
+
+  .i6 {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); // Adjust grid column width for medium screens
+  }
+
+  .i8 {
+    font-size: 1.3rem; // Adjust subtitle font size for medium screens
+  }
+}
+
+@media (max-width: 768px) {
+  .i3 {
+    padding: 1.5rem; // Reduce padding for tablets
+  }
+
+  .i4 {
+    font-size: 3em; // Adjust title size for tablets
+  }
+
+  .i6 {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); // Adjust grid for tablets
+  }
+
+  .i8 {
+    font-size: 1.2rem; // Adjust subtitle size for tablets
+  }
+}
+
+@media (max-width: 480px) {
+  .i3 {
+    padding: 1rem; // Further reduce padding for mobile phones
+  }
+
+  .i4 {
+    font-size: 2.5em; // Adjust title size for mobile
+  }
+
+  .i6 {
+    grid-template-columns: 1fr; // Single-column layout for mobile
+  }
+
+  .i7 {
+    padding: 1rem; // Adjust padding for mobile
+  }
+
+  .i8 {
+    font-size: 1rem; // Adjust subtitle size for mobile
+  }
 }

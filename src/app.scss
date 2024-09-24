@@ -1,44 +1,61 @@
-section{
-   
+.responsive-section {
     scroll-snap-align: center;
 }
-.ish{
-   height: 150vh;
-}
-.pre{
-    height: 100vh;
-}
-.post{
-    height:100vh;
-}
-.wow{
-    height:100vh;
-}
-.balle{
-    height:100vh;
-}
-.shawa{
-    height:100vh;
-}
-.gar{
-    height:20vh;
+
+.ish, .pre, .post, .wow, .balle, .shawa {
+    height: auto; /* Set to auto to adjust according to content */
+    min-height: 100vh; /* Ensure at least full viewport height */
+    padding: 2rem; /* Add some padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-html{
+.gar {
+    height: auto; /* Adjust height according to content */
+    min-height: 20vh; /* Ensure a minimum height for consistency */
+    padding: 1rem;
+}
+
+/* Ensure the html and body styles are consistent */
+html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
-*{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
-}
-body{
+
+body {
     background-color: #0c0c1d;
     color: lightgray;
+    font-family: "DM Sans", sans-serif;
 }
-a{
+
+/* Remove default margin and padding */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .ish, .pre, .post, .wow, .balle, .shawa {
+        min-height: 80vh; /* Adjust height for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .ish, .pre, .post, .wow, .balle, .shawa {
+        min-height: 70vh; /* Adjust height for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .ish, .pre, .post, .wow, .balle, .shawa {
+        min-height: 60vh; /* Adjust height for mobile phones */
+    }
 }

@@ -51,6 +51,21 @@
           }
         }
       }
+      @media (max-width: 768px) {
+        .footer-content p {
+          font-size: 1rem; // Adjust paragraph size on smaller screens
+        }
+    
+        .social-icons {
+          font-size: 1.2rem; // Adjust icon size on smaller screens
+        }
+      }
+    
+      @media (max-width: 480px) {
+        .footer-content p {
+          font-size: 0.9rem; // Further reduce font size on mobile
+        }
+      }
     }
   }
   

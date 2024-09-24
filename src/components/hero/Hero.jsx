@@ -32,7 +32,7 @@ const Hero = () => {
           <a href="#scroll"> <img src="scroll.png" alt="Scroll"  /></a>
         </div>
         <motion.div className="imageContainer">
-          <img src="/rbg1.png" alt="Hero"  />
+          <img src="./rbg1.png" alt="Hero"  />
         </motion.div>
       </div>
       <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">

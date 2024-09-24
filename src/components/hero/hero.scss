@@ -1,134 +1,243 @@
-.hero {
+.hero { 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
   position: relative;
-  z-index:0;
-  //margin-top: -65px;
+  z-index: 0;
 
   .wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
-    z-index: 1; 
+    z-index: 1;
 
     .textContainer {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      max-width: 600px;
-      padding-left: 200px;  /* Increased padding-left value */
-      margin-top: -100px;
+      max-width: 50%;
+      padding-left: 10%;
+      margin-top: 0;
 
       h2 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
         color: #9b72cf;
         font-weight: bold;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
 
       h1 {
-        font-size: 6rem; 
+        font-size: 4rem;
         color: white;
         font-weight: bold;
         margin-bottom: 1rem;
-        font-family: 'Arial', sans-serif; 
+        font-family: 'Arial', sans-serif;
       }
 
       .buttons {
         display: flex;
-        gap: 1rem;
-        margin-top: 30px;
-        font: bold;
-        padding:5rem, 5rem;
-        
+        gap: 0.5rem;
+        margin-top: 20px;
+
         button {
-          padding: 10px 20px;
-          //Addyourdesiredpaddingheremargin-right: 10px;
+          padding: 8px 16px;
           background-color: transparent;
           font-weight: bold;
           color: #9b72cf;
           border: 2px solid #9b72cf;
-          font-size: 1rem;
+          font-size: 0.9rem;
           cursor: pointer;
           transition: background-color 0.3s ease;
           border-radius: 2px;
-          &:hover           
-          
-{
+          white-space: nowrap; // Ensure no text wrapping
+
+          &:hover {
             background-color: darken(#9b72cf, 10%);
-            color:white;
+            color: white;
+          }
+
+          a {
+            text-decoration: none;
+            color: inherit;
           }
         }
-       
-          
-        
       }
 
       img {
-        margin-top: 50px;
-        width: 50px; 
-        height: 50px; 
-        margin-bottom: 30px;
-
+        margin-top: 30px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 20px;
       }
     }
 
     .imageContainer {
-      margin-top: -65px;
       flex: 1;
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-start; 
+      justify-content: center;
+      align-items: center;
       padding-left: 1.5rem;
-      position: relative; 
-      
-      
-      
-      img {
-        width: 90%; 
-        width: 500px; 
-        height: 600px;
-        margin-right: 35px; 
-        position: relative; 
-        top: -20px; 
-        left: 20px; 
+      position: relative;
 
-        
+      img {
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        max-height: 500px;
       }
-      
     }
   }
 
   .slidingTextContainer {
     position: absolute;
-    font-size: 50vh;
-    bottom: -120px;
+    font-size: 8vw;
+    bottom: -5%;
     white-space: nowrap;
     color: #ffffff09;
-    width: 50%;
+    width: 100%;
     font-weight: bold;
     transform: translate(-50%, -50%);
     z-index: 0;
     -webkit-animation: slide-left 8s linear infinite;
-  }
-
-  @keyframes slide-left {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+    animation: slide-left 8s linear infinite;
   }
 }
 
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .hero .textContainer {
+    padding-left: 7%;
+    max-width: 60%;
+  }
 
+  .hero h1 {
+    font-size: 3.5rem;
+  }
 
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero .imageContainer img {
+    max-width: 350px;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column; // Stack items vertically on smaller screens
+  }
+
+  .hero .textContainer {
+    padding-left: 5%;
+    max-width: 80%;
+    align-items: center; // Center text on smaller screens
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero .buttons {
+    flex-direction: column;
+    gap: 0.8rem; // Increase gap between buttons for better stacking
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero .imageContainer img {
+    max-width: 300px;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .textContainer {
+    padding-left: 3%;
+    max-width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero .imageContainer img {
+    max-width: 250px;
+    max-height: 300px;
+  }
+
+  .hero .buttons button {
+    font-size: 0.8rem; // Reduce button font size for smaller screens
+    padding: 6px 12px; // Adjust padding
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .textContainer {
+    padding-left: 2%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .hero .imageContainer img {
+    max-width: 200px;
+    max-height: 250px;
+  }
+
+  .hero .buttons button {
+    font-size: 0.7rem; // Further reduce button font size
+    padding: 5px 10px; // Adjust padding
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .textContainer {
+    padding-left: 1%;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .hero .imageContainer img {
+    max-width: 150px;
+    max-height: 200px;
+  }
+
+  .hero .buttons button {
+    font-size: 0.6rem; // Smallest font size for buttons
+    padding: 4px 8px; // Adjust padding
+  }
+}
